@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kanban Pro - Tablero</title>
+<meta name="description" content="Tablero Kanban Pro">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+  <nav class="nav">
+    <div class="nav-left">
+      <img src="imagenes/logo.svg" class="nav-logo" alt="logo">
+      <span class="nav-title">Kanban Pro</span>
+    </div>
+    <div class="nav-right">
+      <button id="addBoardBtn" class="btn-ghost">+ Nueva tarjeta</button>
+      <a href="contacto.html" class="nav-link">Contáctanos</a>
+      <button id="logout" class="btn-ghost">Salir</button>
+    </div>
+  </nav>
+
+  <header class="hero-banner">
+    <h1>Tu tablero Kanban</h1>
+    <p class="muted">Arrastra las tarjetas entre columnas. Los cambios se guardan en tu navegador.</p>
+  </header>
+
+  <main class="board-wrap">
+    <section class="column" data-col="todo">
+      <h3>Por hacer</h3>
+      <div class="col-body" id="todo"></div>
+    </section>
+
+    <section class="column" data-col="doing">
+      <h3>En progreso</h3>
+      <div class="col-body" id="doing"></div>
+    </section>
+
+    <section class="column" data-col="done">
+      <h3>Completado</h3>
+      <div class="col-body" id="done"></div>
+    </section>
+  </main>
+
+  <aside class="right-panel">
+    <div class="card info">
+      <h4>Miembros</h4>
+      <div class="members">
+        <img src="imagenes/avatar1.svg" title="Ana" alt="ana">
+        <img src="imagenes/avatar2.svg" title="Luis" alt="luis">
+        <img src="imagenes/avatar3.svg" title="Marta" alt="marta">
+      </div>
+    </div>
+
+    <div class="card help">
+      <h4>Atajos</h4>
+      <ul>
+        <li>Crear tarjeta: botón +</li>
+        <li>Arrastrar y soltar para mover</li>
+        <li>Los datos se guardan localmente</li>
+      </ul>
+    </div>
+  </aside>
+
+  <footer class="site-footer">© 2025 Kanban Pro · TEINCO</footer>
+<script src="script.js"></script>
+</body>
+</html>

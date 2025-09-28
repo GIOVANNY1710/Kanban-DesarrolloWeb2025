@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kanban Pro - Login</title>
+<meta name="description" content="Kanban Pro - profesional">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-login">
+  <header class="topbar">
+    <img src="imagenes/logo.svg" alt="logo" class="top-logo">
+    <div class="top-title">Kanban Pro - TEINCO</div>
+  </header>
+
+  <main class="login-area">
+    <div class="login-panel">
+      <aside class="login-left">
+        <img src="imagenes/hero.svg" alt="hero" class="hero-illus">
+        <h2>Organiza. Colabora. Entrega.</h2>
+        <p class="muted">Una solución simple y potente para gestionar tus proyectos con Kanban.</p>
+      </aside>
+
+      <section class="login-right">
+        <img src="imagenes/logo.svg" class="logo-small" alt="logo small">
+        <h1>Bienvenido</h1>
+        <p class="muted">Inicia sesión para acceder al tablero</p>
+
+        <form id="loginForm" class="form-card">
+          <label>Usuario</label>
+          <div class="input-icon"><input id="user" placeholder="Tu usuario" required></div>
+
+          <label>Contraseña</label>
+          <div class="input-icon"><input id="pass" type="password" placeholder="Contraseña" required></div>
+
+          <div class="actions">
+            <button type="submit" class="btn-primary">Entrar</button>
+            <button type="button" class="btn-ghost" id="demoBtn">Demo</button>
+          </div>
+
+          <p class="muted small">Cuenta demo: <strong>estudiante</strong> / <strong>1234</strong></p>
+          <p class="links"><a href="#">¿Olvidaste tu contraseña?</a> • <a href="#">Registrarse</a></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Kanban Pro · TEINCO</div>
+    <div class="socials">📧 <a href="mailto:contacto@teinco.edu.co">contacto@teinco.edu.co</a> • <a href="#">GitHub</a></div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

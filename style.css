@@ -1,0 +1,67 @@
+:root{
+  --bg1: #f6f8ff;
+  --accent: linear-gradient(90deg,#6c63ff,#00bfa6);
+  --muted: #6b7280;
+  --card: #ffffff;
+}
+
+*{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;}
+
+body{margin:0;background:var(--bg1);color:#111827}
+
+/* topbar */
+.topbar{display:flex;align-items:center;gap:12px;padding:12px 24px;background:transparent}
+.top-logo{width:48px;height:48px}
+.top-title{font-weight:700;color:#111827}
+
+/* login area */
+.login-area{display:flex;justify-content:center;align-items:center;padding:40px 20px}
+.login-panel{display:flex;max-width:1100px;width:100%;background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(15,23,42,0.08)}
+.login-left{flex:1;padding:40px;background:linear-gradient(180deg,#fff,#f7fbff);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.hero-illus{width:320px;max-width:85%}
+.login-right{flex:1;padding:36px}
+.logo-small{width:64px;margin-bottom:12px}
+.form-card label{display:block;margin-top:12px;color:var(--muted)}
+.input-icon{display:flex;align-items:center;margin-top:8px;border:1px solid #eef2ff;padding:8px;border-radius:10px;background:#fff}
+.input-icon input{flex:1;border:none;outline:none;padding:8px}
+
+/* buttons */
+.btn-primary{background:linear-gradient(90deg,#6c63ff,#4f46e5);color:#fff;padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600;box-shadow:0 8px 18px rgba(79,70,229,0.12)}
+.btn-ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);padding:8px 12px;border-radius:8px;cursor:pointer}
+
+/* footer */
+.site-footer{padding:18px;text-align:center;color:var(--muted);font-size:14px;background:transparent}
+
+/* nav & app */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:#fff;border-bottom:1px solid #eef2ff}
+.nav-logo{width:40px}
+.nav-title{font-weight:600}
+.nav-right{display:flex;gap:12px;align-items:center}
+
+/* hero banner */
+.hero-banner{padding:28px 24px;background:linear-gradient(90deg,#eef2ff,#fff);border-bottom:1px solid #eef2ff;text-align:center}
+.hero-banner h1{margin:0;font-size:28px}
+
+/* board */
+.board-wrap{display:flex;gap:18px;padding:20px;max-width:1200px;margin:20px auto}
+.column{flex:1;background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 20px rgba(12,16,34,0.04);min-height:300px}
+.column h3{margin:0 0 8px 0;display:flex;align-items:center;justify-content:space-between}
+.col-body{min-height:220px;display:flex;flex-direction:column;gap:10px}
+.card-item{background:#fff;padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.06);display:flex;align-items:flex-start;gap:10px}
+.card-item .meta{flex:1}
+.card-item .avatar{width:36px;height:36px;border-radius:8px;overflow:hidden}
+
+/* right panel */
+.right-panel{width:280px;padding:20px;position:fixed;right:24px;top:120px;display:flex;flex-direction:column;gap:12px}
+.card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+
+/* contact */
+.contact-main{display:flex;justify-content:center;padding:40px 20px}
+.contact-card{max-width:720px;background:var(--card);padding:28px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.04)}
+
+/* responsive */
+@media(max-width:900px){
+  .board-wrap{flex-direction:column;padding:12px}
+  .right-panel{position:static;width:100%;order:99;margin-top:12px}
+  .login-panel{flex-direction:column}
+}

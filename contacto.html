@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kanban Pro - Contacto</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav small">
+    <div class="nav-left"><img src="imagenes/logo.svg" class="nav-logo" alt="logo"><span>Kanban Pro</span></div>
+    <div class="nav-right"><a href="index.html">Inicio</a> • <a href="kanban.html">Tablero</a></div>
+  </nav>
+
+  <main class="contact-main">
+    <div class="contact-card">
+      <h2>Contáctanos</h2>
+      <p class="muted">¿Tienes dudas o quieres colaborar? Escríbenos.</p>
+      <form id="contactForm" class="form-card">
+        <label>Nombre</label><input id="cname" required>
+        <label>Email</label><input id="cemail" type="email" required>
+        <label>Mensaje</label><textarea id="cmsg" rows="4" required></textarea>
+        <div class="actions"><button class="btn-primary" type="submit">Enviar</button></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2025 Kanban Pro · TEINCO</footer>
+<script src="script.js"></script>
+</body>
+</html>
